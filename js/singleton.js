@@ -3,7 +3,7 @@ console.log("singleton.js");
 const mySingleton = (function () {
  
     // Instance stores a reference to the Singleton
-    const instance;
+    var instance;
    
     function init() {
    
