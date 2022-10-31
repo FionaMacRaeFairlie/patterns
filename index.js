@@ -7,7 +7,7 @@ const path = require('path');
 const public = path.join(__dirname,'public');
 app.use(express.static(public));
 app.get('/', function(req, res) {
-    res.send('Hello! Welcome to my application.');
+    res.sendFile(path.join(public, 'index.html'));
     })
     
 app.get('/home', function(req, res) {
